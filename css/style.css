@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+.article {
+    background-color: green;
+}
+
+article {
+    background-color: red;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container article {
+    display: flex;
+}
