@@ -1,20 +1,110 @@
-body {
-    background-color: black;
+html {
+    font-family: 'Times New Roman',Verdana, Tahoma, sans-serif;
+}
+
+body{
+    background-color: lightgray;
+    height: 100%;
+    width: 100%;
+}
+
+#chapter {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    box-shadow: 2px 2px 5px #515c53;
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .intro {
+        top: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+        display: none;
+    }
+}
+
+div nav {
+    background-color: rgba(128,128,128);
+    font-family: Tahoma;
+    position: fixed;
+}
+
+header h1 {
+    position: relative;
+    left: 12%;
+    top: -41%;
 }
 
 .article {
-    background-color: green;
+    background-color: #fff;
+    font-family: Tahoma;
 }
 
-article {
-    background-color: red;
+nav p {
+    color: #fff;
+    font-size: 16px;
 }
 
-.page {
-    display: flex;
-    flex-wrap: wrap;
+h2 {
+    color: black;
 }
 
-.container article {
-    display: flex;
+.com {
+    background-color: #fff;
+    font-family: Tahoma;
+}
+
+h3 {
+    color: #fff;
+}
+
+.chapitre {
+    color: black;
+}
+
+.button {
+    border: 2px solid rgb(91, 102, 94),
+}
+
+footer{
+    background-color: grey;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+footer a{
+    color: #000000;
+}
+
+.link1 {
+    position: absolute;
+    font-size: 27px;
+    color: #fff;
+    right: 290px;
+}
+
+.link2 {
+    position: absolute;
+    border: 0;
+    right: 154px;
+}
+
+.link3 {
+    position: absolute;
+    right: 16px;
+    border: 0;
 }

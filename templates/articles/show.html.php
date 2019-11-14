@@ -4,19 +4,26 @@
 <hr>
 <?= $article['content'] ?>
     
-
 <?php if (count($commentaires) === 0) : ?>
     <h2>Il n'y a pas encore de commentaires pour cet article ... SOYEZ LE PREMIER ! :D</h2>
 <?php else : ?>
     <h2>Il y a déjà <?= count($commentaires) ?> réactions : </h2>
+    <div class="row mb-2">
     <?php foreach ($commentaires as $commentaire) : ?>
+    <div class="col-md-12">
+    	<div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative com">
+    		<div class="col p-4 d-flex flex-column position-static">
         <h3>Commentaire de <?= $commentaire['author'] ?></h3>
         <small>Le <?= $commentaire['created_at'] ?></small>
         <blockquote>
             <em><?= $commentaire['content'] ?></em>
         </blockquote>
         <a href="index.php?controller=comment&task=delete&id=<?= $commentaire['id'] ?>" onclick="return window.confirm(`Êtes vous sûr de vouloir supprimer ce commentaire ?!`)">Supprimer</a>
+</div>
+</div>
+</div>
     <?php endforeach ?>
+</div>
 <?php endif ?>
 
 <form action="index.php?controller=comment&task=insert" method="POST">
