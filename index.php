@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CE FICHIER A POUR BUT D'AFFICHER LA PAGE D'ACCUEIL !
  * 
@@ -7,6 +6,7 @@
  * puis on va boucler dessus pour afficher chacun d'entre eux
  */
 require_once('libraries/autoload.php');
+session_start();
 
 \Application::process();
 

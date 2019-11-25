@@ -1,21 +1,36 @@
 html {
     font-family: 'Times New Roman',Verdana, Tahoma, sans-serif;
+    height: 100%;
 }
 
 body{
-    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: goldenrod;
     height: 100%;
+    width: 100%;
+}
+
+#bloc_page {
+    border: 2px solid black;
+    display: block;
     width: 100%;
 }
 
 #chapter {
     text-align: center;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: lightgoldenrodyellow;
 }
 
-header img {
+#alaska  {
     width: 100%;
     box-shadow: 2px 2px 5px #515c53;
 }
+
 
 .intro {
     position: absolute;
@@ -36,10 +51,14 @@ header img {
     }
 }
 
-div nav {
-    background-color: rgba(128,128,128);
+#navigation {
+    background-color: rgba(0, 30, 0, 0.5);
     font-family: Tahoma;
     position: fixed;
+    border: 5px solid black;
+    height: 74px;
+    width: 100%;
+    z-index: 100;
 }
 
 header h1 {
@@ -49,13 +68,27 @@ header h1 {
 }
 
 .article {
-    background-color: #fff;
+    background-color: lightgoldenrodyellow;
     font-family: Tahoma;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin: 5px;
 }
 
 nav p {
     color: #fff;
     font-size: 16px;
+    align-self: left;
+    position: absolute;
+    top: 20px;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    min-height: 470px;
+    justify-content: center;
 }
 
 h2 {
@@ -75,15 +108,72 @@ h3 {
     color: black;
 }
 
-.button {
-    border: 2px solid rgb(91, 102, 94),
+.buttonbook {
+    position: absolute;
+    border: 2px solid black;
+    background-color: lightblue;
+    border-radius: 11px;
+    color: black;
+    top: 50%;
+    right: 18px;
+    text-decoration: none;
+    width: 108px;
+}
+
+#button1 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    background-color: rgb(57, 173, 57);
+    width: 30%;
+    align-self: center;
+    color: black;
+
+}
+
+#button2 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    width: 30%;
+    align-self: center;
+    color: black;
+}
+
+#button3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    width: 15%;
+    align-self: left;
+    color: black;
+}
+
+
+#button4 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    width: 15%;
+    align-self: left;
+    color: black;
+}
+
+#buttonconnect1 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-right: 1px;
+}
+
+#buttonconnect2 {
+    margin-top: 0;
+    margin-bottom: 1px;
+    margin-right: 1px;
 }
 
 footer{
-    background-color: grey;
+    background-color: darkolivegreen;
     padding: 10px;
     font-size: 0.8em;
     text-align: center;
+    border: 5px solid black;
+    color: white;
 }
 
 footer a{
@@ -94,17 +184,199 @@ footer a{
     position: absolute;
     font-size: 27px;
     color: #fff;
-    right: 290px;
+    right: 10px;
 }
 
 .link2 {
     position: absolute;
-    border: 0;
-    right: 154px;
+    color: white;
+    right: 55px;
 }
 
-.link3 {
-    position: absolute;
-    right: 16px;
-    border: 0;
+.contentLogin {
+    width: 100%;
+    height: 227px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(252, 183, 39);
 }
+  
+.contentLogin h2 {
+    font-size: 1.1em;
+}
+  
+.login {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+  
+.formConnexion {
+    width: 320px;
+    text-align: right;
+}
+  
+.formConnexion fieldset {
+    border: 5px solid black;
+}
+  
+.formConnexion input {
+    margin: 5px;
+}
+
+.aside {
+    text-align: center;
+  
+}
+  
+.menuAside {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: lightgoldenrodyellow;
+    border-radius: 10px;
+    color: black;
+  
+}
+    
+.menuAside h2 {
+    margin-top: 0;
+  
+}
+    
+.menuAside ul {
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+  
+.menuAside li {
+    padding: 5px;
+}
+  
+.menuAside a {
+    font-size: 0.9em;
+    color: black;
+}
+  
+.menuAside a:hover {
+    color: black;
+}
+
+.articles {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    color: black;
+    font-size: 0.9em;
+}
+.content h2 {
+    text-decoration-line: underline;
+    color: black;
+    font-size: 1.5em;
+}
+  
+.articleTitle {
+    font-size: 1.3em;
+    margin: 0;
+    margin-bottom: 15px;
+}
+  
+.articles a {
+    color: black;
+}
+  
+.articles header {
+    margin-bottom: 25px;
+}
+
+.commentaire {
+    border: 5px solid black;
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.commentaire h3 {
+    color: black;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.article_full {
+    color: white;
+}
+
+.formcomment {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputform {
+    display: flex;
+    width: 15%;
+    border: 3px solid black;
+}
+
+#textcomment {
+    border: 3px solid black;
+    width: 100%;
+
+}
+
+#buttonform {
+    width: 130px;
+    padding-left: 16px;
+    margin-top: 0;
+    display: flex;
+    align-self: center;
+}
+
+.formReport {
+    border: 4px solid black;
+    background-color: lightgoldenrodyellow;
+}
+
+#textReportCom {
+    width: 100%;
+}
+
+#button5 {
+    margin-top: 0;
+}
+
+#button6 {
+    margin-top: 0;
+}
+
+.authorReport {
+    text-align: center;
+    border: 3px solid black;
+    background-color: lightgray;
+}
+
+.introduction {
+    width: 100%
+}
+
+.formComment {
+    border: 4px solid black;
+    background-color: lightgoldenrodyellow;
+}
+  
+  
+  
+
+
+  
