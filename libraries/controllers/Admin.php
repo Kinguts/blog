@@ -54,6 +54,9 @@ class Admin extends Controller
   // Vérification de l'utilisateur et du mot de passe
   public function login()
   {
+    if (empty($_POST['username']) || empty($_POST['password'])) {
+      \Http::redirect("index.php?controller=admin&task=loginPage");
+    }
     $username = htmlspecialchars($_POST['username']);
     $password = htmlspecialchars($_POST['password']);
 
@@ -88,7 +91,7 @@ class Admin extends Controller
   {
     $_SESSION = array();
     session_destroy();
-    \Http::redirect("index.php?controller=admin&task=login");
+    \Http::redirect("index.php");
   }
 
   // Ajoute un article
