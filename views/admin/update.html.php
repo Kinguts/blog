@@ -63,8 +63,6 @@
           <!-- Contenu du commentaire -->
           <textarea name="txtReportCom" id="textReportCom" rows="8" cols="80"><?= $comment['content'] ?></textarea>
           <div>
-            <!-- Bouton valider -->
-            <button class="btn btn-success" id="button5" type="submit">Valider</button>
             <!-- Bouton supprimer -->
             <button class="btn btn-danger" id="button5" type="submit" formaction="index.php?controller=comment&task=delete&id=<?= $comment['id'] ?>">Supprimer</button>
           </div>
