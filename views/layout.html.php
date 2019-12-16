@@ -50,7 +50,7 @@
       -
       <a href="index.php">Mentions légales</a>
        -<?php if ( !empty($_SESSION) ) : ?>
-        <span><i class="fas fa-user"></i><strong> Bonjour <?php echo htmlspecialchars($_SESSION['username']); ?></strong></span>
+        <span><i class="fas fa-user"></i><strong> Bonjour <?php echo($_SESSION['username']); ?></strong></span>
         <a href="index.php?controller=admin&task=disconnect">Deconnexion</a>
         <?php else : ?>
           <a href="index.php?controller=admin">Connexion</a>

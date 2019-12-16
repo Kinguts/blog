@@ -7,7 +7,7 @@
       <div class="col p-4 d-flex flex-column position-static">
 		<ul class="align">
           <small class="mb-0 text-muted">Ecrit le <?= $article['dateArt_fr'] ?></small>
-          <li><figure class="book">
+          <li class="book_all"><figure class="book">
             <!-- Front -->     
             <ul class="hardcover_front">
               <li>
@@ -37,7 +37,7 @@
             <figcaption>
               <h3 class="mb-2 chapitre"><?= $article['title'] ?></h3>
               <span>Jean Forteroche</span>
-              <div><?= $article['introduction'] ?></div>
+              <div class="intro_index"><?= $article['introduction'] ?></div>
             </figcaption>
           </figure></li>
         </ul>       
