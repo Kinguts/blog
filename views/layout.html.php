@@ -33,7 +33,7 @@
           </nav>
         </div>
       </header>      
-      <img id="alaska" src="/images/alask1.jpg" alt="alaska" style="width= 100%;">
+      <img id="alaska" src="/images/alask3.jpg" alt="alaska" style="width= 100%;">
       <div class="intro">
         <div class="container">         
         </div>
@@ -46,7 +46,7 @@
     <footer>
     <p>
       2019
-      <a href>Steeve Saint-Martin</a>
+      <a href>Jean Forteroche</a>
       -
       <a href="index.php">Mentions légales</a>
        -<?php if ( !empty($_SESSION) ) : ?>
