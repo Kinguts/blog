@@ -13,7 +13,7 @@ class Database
   {
     if (self::$instance === null)
       {
-        self::$instance = new PDO('mysql:host=localhost;dbname=blogpoo;charset=utf8', 'root', '', [
+        self::$instance = new PDO('mysql:host=localhost;dbname=dbs245811;charset=utf8', 'dbu124978', 'Berserk77.220', [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);

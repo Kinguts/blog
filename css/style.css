@@ -77,7 +77,6 @@ header h1 {
 nav p {
     color: #fff;
     font-size: 16px;
-    align-self: left;
     position: absolute;
     top: 20px;
 }
@@ -140,7 +139,6 @@ h3 {
     margin-top: 0;
     margin-bottom: 2px;
     width: 15%;
-    align-self: left;
     color: black;
 }
 
@@ -149,7 +147,6 @@ h3 {
     margin-top: 0;
     margin-bottom: 2px;
     width: 15%;
-    align-self: left;
     color: black;
 }
 

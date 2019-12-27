@@ -42,7 +42,7 @@ class Article extends Controller
     /**
      * 3. Récupération de l'article en question
      * On va ici utiliser une requête préparée car elle inclue une variable qui provient de l'utilisateur : Ne faites
-     * jamais confiance à ce connard d'utilisateur ! :D
+     * jamais confiance à l'utilisateur ! :D
      */
     $article =$this->model->getArticle($article_id);
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,48 +15,49 @@
     <script>
      tinymce.init({
     selector: '#mytextarea'
-    });</script>
-</head>
+    });
+    </script>
+  </head>
 
-<body>
-  <div id="bloc_page">
-    <div id="main">         
+  <body>
+    <div id="bloc_page">
+      <div id="main">         
 
-      <header>
-        <div>
-          <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
-            <p>Billet simple pour l'Alaska</p>
-            <a class="link1" href="index.php"><i class="fas fa-home"></i></a>
-            <?php if ( !empty($_SESSION) ) : ?>
-            <a class="link2" href="index.php?controller=admin">Administration<a>
-            <?php endif; ?>
-          </nav>
-        </div>
-      </header>      
-      <img id="alaska" src="/images/alask3.jpg" alt="alaska" style="width= 100%;">
-      <div class="intro">
-        <div class="container">         
-        </div>
-      </div>           
-    </div>            
-    <section>
-      <?= $pageContent ?>
-    </section>
+        <header>
+          <div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" id="navigation">
+              <p>Billet simple pour l'Alaska</p>
+              <a class="link1" href="index.php"><i class="fas fa-home"></i></a>
+              <?php if ( !empty($_SESSION) ) : ?>
+              <a class="link2" href="index.php?controller=admin">Administration</a>
+              <?php endif; ?>
+            </nav>
+          </div>
+        </header>      
+        <img id="alaska" src="/images/alask3.jpg" alt="alaska" style="width= 100%;">
+        <div class="intro">
+          <div class="container">         
+          </div>
+        </div>           
+      </div>            
+      <section>
+        <?= $pageContent ?>
+      </section>
 
-    <footer>
-    <p>
-      2019
-      <a href>Jean Forteroche</a>
-      -
-      <a href="index.php">Mentions légales</a>
-       -<?php if ( !empty($_SESSION) ) : ?>
+      <footer>
+        <p>
+          2019
+        <a href>Jean Forteroche</a>
+          -
+        <a href="index.php">Mentions légales</a>
+         -<?php if ( !empty($_SESSION) ) : ?>
         <span><i class="fas fa-user"></i><strong> Bonjour <?php echo($_SESSION['username']); ?></strong></span>
-        <a href="index.php?controller=admin&task=disconnect">Deconnexion</a>
-        <?php else : ?>
+          <a href="index.php?controller=admin&task=disconnect">Deconnexion</a>
+          <?php else : ?>
           <a href="index.php?controller=admin">Connexion</a>
-        <?php endif; ?>
+          <?php endif; ?>
         </p>
-    </footer>
-  </div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
